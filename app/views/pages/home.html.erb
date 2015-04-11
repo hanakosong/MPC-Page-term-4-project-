@@ -1,0 +1,273 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><%= image_tag "logo.png" %></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Companies", root_path(anchor: "portfolio"), class: "scroll" %></li>
+        <li><%= link_to "Mentors", root_path(anchor: "mentors"), class: "scroll" %></li>
+        <li><%= link_to "Services", root_path(anchor: "services"), class: "scroll" %></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<section id="intro" class="centered bg-blue top">
+  <div class="container">
+    <h1>EDTECH <span class="action">ACTION</span></h1>
+    <h4>Deep in the heart of EdTech</h4>
+    <%= image_tag "texas.png", class: "texas" %>
+  </div> <!-- /container -->
+</section> <!-- /intro -->
+
+<section id="what">
+  <div class="container centered">
+      <div class="col-lg-12">
+          <h1 class="grow">We help companies grow</h1>
+      </div>
+      <div class="row hidden-xs">    
+        <div class="col-lg-12">  
+          <h4 class="how">Develop Products ・ Acquire Customers ・ Accelerate Startups</h4>
+        </div>  
+      </div>  
+      <div class="row visible-xs">    
+        <div class="col-xs-12">  
+          <h4 class="how"><BR>Develop Products<BR>Acquire Customers<BR>Accelerate Startups</h4>
+        </div> 
+      </div>  
+      <div>
+          <p>From idea to acceleration, we connect you to the people you need to know and help you navigate the choppy waters of the education marketplace through our incubator, accelerator, and consultation services.</p>
+
+          <p>We understand the business of education!</p>
+      </div>
+    </div>
+  </div> <!-- /container -->
+</section> <!-- /what -->
+
+<div class="line"></div>
+
+<section id="portfolio">
+  <div class="container companies centered">
+    <h2>Portfolio Companies</h2>
+      <div class="col-lg-12">
+        <p>These companies have joined our Incubator/Accelerator program:</p>
+      </div> <!-- /col -->
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+          <%= link_to (image_tag "companies/penpal.jpg", class: "img-responsive center-block"), "https://www.penpalschools.com/", class: "img-responsive", target: "_blank" %>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <%= link_to (image_tag "companies/vchain.png", class: "img-responsive center-block"), "http://www.vchainsolutions.com/", class: "img-responsive", target: "_blank" %>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <%= link_to (image_tag "companies/scribesense.png", class: "img-responsive center-block"), "https://www.scribesense.com/", class: "img-responsive", target: "_blank" %>
+          </div>
+        </div>
+        <div class="row">  
+          <div class="col-md-6 col-xs-12">
+          <%= link_to (image_tag "companies/aceable.png", class: "img-responsive center-block"), "http://www.aceable.com/", class: "img-responsive", target: "_blank" %>
+          </div>
+          <div class="col-md-6 col-xs-12">
+          <%= link_to (image_tag "companies/famigo.png", class: "img-responsive center-block"), "http://www.famigo.com/", class: "img-responsive", target: "_blank" %>
+          </div>
+        </div>
+      </div> <!-- /col -->
+  </div> <!-- /container -->
+</section> <!-- /portfolio -->
+
+<div class="line"></div>
+
+<section id="implement-companies">
+  <div class="container companies centered">
+    <h2>Companies We Work With</h2>
+    <div class="col-lg-12">
+      <p>Through our Initiate and Implement services, we help EdTech companies acquire customers, understand the education marketplace, and manage growth in the EdTech industry.</p>
+    </div> <!-- /col -->
+    <div class="col-lg-12">
+      <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "companies/weeva.png", class: "img-responsive center-block"), "https://www.weeva.co/", class: "img-responsive", target: "_blank"  %>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "companies/upswing.png", class: "img-responsive center-block"), "https://upswing.io/", class: "img-responsive", target: "_blank"  %>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "companies/givepulse.png", class: "img-responsive center-block"), "https://www.givepulse.com/", class: "img-responsive", target: "_blank"  %>
+          </div>          
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "companies/academiacs.png", class: "img-responsive center-block"), "http://academiacs.org/en/account", class: "img-responsive", target: "_blank"  %>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "companies/bigwig.png", class: "img-responsive center-block"), "http://bigwiggames.com/", class: "img-responsive", target: "_blank"  %>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "companies/edusync.png", class: "img-responsive center-block"), "http://www.edusync.com/", class: "img-responsive", target: "_blank"  %>
+          </div>          
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "companies/bookaround.png", class: "img-responsive center-block"), "http://www.bookaround.co/#/", class: "img-responsive", target: "_blank"  %>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "companies/cemup.png", class: "img-responsive center-block"), "https://www.cemup.com/", class: "img-responsive", target: "_blank"  %>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "companies/carreer_onward.png", class: "img-responsive center-block"), "http://careeronward.com/", class: "img-responsive", target: "_blank"  %>
+          </div>
+      </div>
+    </div> <!-- /col -->
+  </div> <!-- /container -->
+</section> <!-- /implement-companies -->
+
+<div class="line"></div>
+
+<section id="mentors">
+  <div class="container" id="centered">
+    <h2>Mentors</h2>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/scott.jpg", class: "img-responsive center-block mentor"), "#scott", class: "popup-with-zoom-anim"%>
+            <h3>Scott Lipton</h3>
+            <p class="rol">Co-Founder & CEO of EdTech Action</p>
+              <div id="scott" class="zoom-anim-dialog mfp-hide small-dialog">
+                <h3>Scott Lipton</h3>
+                <p class="rol">Scott has long been an innovator on the forefront of technology integration in education. Scott is co-founder and CEO of EdTech Action. As an EdTech ambassador, Scott utilizes his unique blend of expertise and awareness of technology and education to work with educators, entrepreneurs, educational institutions, and EdTech companies, bringing the community together to foster transformative change in education. He brings over 20 years of experience in education as a high school principal, district administrator, teacher, and entrepreneur. Scott also serves as the Director for Globaloria, a K-12 blended-learning platform where students learn computer science and coding through video game design.</p>
+              </div> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/sean.jpg", class: "img-responsive center-block mentor"), "#sean", class: "popup-with-zoom-anim"%>
+            <h3>Sean Duffy</h3>
+            <p class="rol">Co-Founder of EdTech Action</p>
+              <div id="sean" class="zoom-anim-dialog mfp-hide small-dialog">
+                <h3>Sean Duffy</h3>
+                <p class="rol">Sean Duffy is an educator and EdTech leader who is passionate about helping to make meaningful change in education through technology. In addition to his work with EdTech Action, Sean is also the founder of EdTech Austin and the lead Organizer for Startup Weekend Education - Austin. Currently, Sean is an Assessment Specialist and Startup Mentor/Advisor for Pearson Catalyst for Education.</p>
+              </div> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/stephanie.jpg", class: "img-responsive center-block mentor"), "#stephanie", class: "popup-with-zoom-anim"%>
+            <h3>Stephanie Cerda</h3>
+            <p class="rol">Co-Founder of EdTech Action</p>
+              <div id="stephanie" class="zoom-anim-dialog mfp-hide small-dialog">
+                <h3>Stephanie Cerda</h3>
+                <p class="rol">Stephanie Cerda has experience teaching multiple content areas from kindergarten to early college. She recently received a M.Ed from the University of Texas in Educational Administration.  Stephanie plans to continue her work to thoughtfully implement and integrate technology into curriculum while striving for equity and successful learning outcomes for all students in her current position as an Innovative Teaching Strategist for Manor ISD.<BR>Her work and interests concentrate on transforming traditional public school structures with a deliberate focus on innovation, excellence, equity, and justice.</p>
+              </div> 
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/clifford.png", class: "img-responsive center-block mentor"), "http://capitalfactory.com/mentor/clifford-k-chiu/", target: "_blank" %>
+            <h5>Clifford Chiu</h5>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/robin.png", class: "img-responsive center-block mentor"), "http://bridgepartnersconsulting.com/people/person/robin-berson", target: "_blank" %>
+            <h5>Robin Nirken Berson</h5>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/zeynep.png", class: "img-responsive center-block mentor"), "http://www.doublelinepartners.com/company/leadership/", target: "_blank" %>
+            <h5>Zeynep Young</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/charles.jpg", class: "img-responsive center-block mentor"), "http://www.civitaslearning.com/about/team.html", target: "_blank" %>
+            <h5>Charles Thornburgh</h5>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/thomas.png", class: "img-responsive center-block mentor"), "#thomas", class: "popup-with-zoom-anim"%>
+            <h3>Thomas Fredell</h3>
+              <div id="thomas" class="zoom-anim-dialog mfp-hide small-dialog">
+                <h3>Thomas Fredell</h3>
+                <p class="rol">Recruited to lead technology-informed investment strategy for well-capitalized Austin firm SmithCo Investment. CTO at Snag-a-job and Intralinks. More than 16 years of C-suite experience growing businesses from inception to greater than $150 million in revenue. General Management: Employs a unique mix of entrepreneurial thinking, technology, and business acumen. Earned a Wharton MBA. P&L Experience: Direct P&L experience for business lines up to $14 million in revenue. Exceeded growth expectations and improved operating margins. Entrepreneurship: Both as an entrepreneur and intrapreneur, has successfully identified market opportunities, validated with customers, and built winning products and businesses. Technology: Deep background in technology and product development for B2B and B2C; built and motivated teams and established product management, UX, dev, architecture, and QC functions. Team Building and Development: Known for fostering a collaborative, team-oriented environment, driving results and growth; consistently builds cohesive, high-performance teams.</p>
+              </div> 
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/al.png", class: "img-responsive center-block mentor"), "#al", class: "popup-with-zoom-anim"%>
+            <h3>Al Lopez</h3>
+              <div id="al" class="zoom-anim-dialog mfp-hide small-dialog">
+                <h3>Al Lopez</h3>
+                <p class="rol">Al Lopez is currently the Executive Director of EGBI. Prior to joining EGBI, Lopez was a finance executive at Dell, Inc. for 11 years, most recently serving as vice president of finance for Dell’s Global Services & IT organization. Previously he spent 21 years at IBM in a host of financial management and executive positions, including two years overseas in France, after starting his career as a sales representative.<BR>In addition to his extensive executive corporate background, Lopez has a strong history of community outreach. He serves as vice president of the St. John Neighborhood Association and chairs the Austin Achievement Zone board of directors, as well as working as a member of the Austin Community Housing Development (CHDO) Roundtable and the For The City Network.<BR>Lopez holds a bachelor’s degree in Accounting from the University of Arizona and an MBA from the University of Northern Colorado. He also served on the University of Texas at Austin Accounting Advisory Council for several years. He and his wife Judy are active at the Austin Stone Community Church. They have three married children.</p>
+              </div> 
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/matt.png", class: "img-responsive center-block mentor"), "http://www.waysideschools.org/domain/113", target: "_blank" %>
+            <h5>Matt Abbott</h5>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/larkin.jpg", class: "img-responsive center-block mentor"), "http://www.ideapublicschools.org//site/Default.aspx?PageID=1701", target: "_blank" %>
+            <h5>Larkin Tackett</h5>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <%= link_to (image_tag "mentors/sabina.jpg", class: "img-responsive center-block mentor"), "http://teacherpop.org/author/sabinabharwani/", target: "_blank" %>
+            <h5>Sabina Barwani</h5>
+          </div>
+        </div>
+
+      </div> <!-- /col -->
+  </div> <!-- /container -->
+</section> <!-- /portfolio -->
+
+<section id="services" class="bg-grey">
+  <div class="container">
+
+    <h2>Our Services</h2>
+
+    <div class="col-md-4">
+      <div class="box">
+        <%= image_tag "initiate.jpg" %>
+        <div class="box-content">
+          <h3>Initiate</h3>
+          <p>We help build great EdTech companies by providing a steady launch runway for startups through our partnerships and strategic alliances.</p>
+        </div>
+        <!-- <%= link_to "View More", "", class: "view-more" %> -->
+      </div> <!-- /box -->
+    </div> <!-- /col -->
+    <div class="col-md-4">
+      <div class="box">
+        <%= image_tag "accelerate.jpg" %>
+        <div class="box-content">
+          <h3>Accelerate</h3>
+          <p>EdTech Action @Capital Factory helps grow great EdTech companies to the next level.</p>
+        </div><!--
+        <%= link_to "View More", "", class: "view-more" %> -->
+      </div> <!-- /box -->
+    </div> <!-- /col -->
+    <div class="col-md-4">
+      <div class="box">
+        <%= image_tag "implement.jpg" %>
+        <div class="box-content">
+          <h3>Implement</h3>
+          <p>We help EdTech companies with customer acquisition, advisement in the education marketplace, and managing growth in the edtech industry.</p>
+        </div><!--
+        <%= link_to "View More", "", class: "view-more" %> -->
+      </div> <!-- /box -->
+    </div> <!-- /col -->
+
+  </div> <!-- /container -->
+</section>
+
+<section id="take-action" class='bg-blue centered contact'>
+  <div class="container">
+    <h1>Take <span class="action">Action</span></h1>
+    <div class="col-md-6 col-md-offset-3">
+      <%= render 'contacts/form' %>
+    </div>
+  </div> <!-- /container -->
+</section>
+
+<footer>
+  <div class="container">
+    <p class="copyright">© 2015 EdTech Action</p>
+  </div>
+</footer>
