@@ -4,7 +4,7 @@
 
 // Overall
 $primary-color: #2B4D8A; // blue
-$secondary-color: #B5592A; // orange
+$secondary-color: #e41220; // orange
 $black: #333;
 $grey: #999;
 $background-grey: #f2f2f2;
@@ -74,7 +74,7 @@ h1 {
 }
 
 h2 {
-  color: $primary-color;
+  color: #333;
   font-size: 2rem;
   margin: 0 0 1.3rem 0;
 }
@@ -128,7 +128,7 @@ p {
 .grow {
   text-align: center;
   font-size: 4rem;
-  color: $primary-color;
+  color: #333;
   letter-spacing: -0.2rem;
   text-transform: none; 
 }
